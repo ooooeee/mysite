@@ -1,0 +1,25 @@
+<?php
+			foreach ($project_desc as $proj) {
+
+			?>
+            <section>
+				<img src="img/<?php echo $proj['image']; ?>" alt="">
+    <hr>
+    <div>
+        <div>
+            <h1><? echo $proj['short-URL']; ?></h1>
+            <hr>
+            <p><? echo $proj['description']; ?></p>
+            <hr>
+        </div>
+        <div>
+            <h2>Что было сделано мной:</h2>
+            <p><? echo $proj['what-was-done-by-me']; ?></p>
+        </div>
+    </div>
+</section>
+			<?php
+
+			}
+
+			?>
