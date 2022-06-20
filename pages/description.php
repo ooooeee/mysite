@@ -47,7 +47,7 @@
                         <p><? echo $proj['description']; ?></p>
                         <hr>
                     </div>
-                    <div>рполрпо
+                    <div>
                         <h2>Что было сделано мной:</h2>
                         <p><? echo $proj['what-was-done-by-me']; ?></p>
                     </div>
