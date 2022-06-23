@@ -45,7 +45,7 @@
                         <h1><? echo $proj['short-URL']; ?></h1>
                         <hr>
                         <p><? echo $proj['description']; ?></p>
-                        <hr>
+                        <hr>fghfh
                     </div>
                     <div>
                         <h2>Что было сделано мной:</h2>
