@@ -548,7 +548,6 @@ button[class^=grow]:hover::after {
     top: 0;
     left: 0;
     opacity: 0;
-    visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.8s ease 0s;

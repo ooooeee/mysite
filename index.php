@@ -5,7 +5,7 @@
 <?php require_once "php/globals.php" ?>
 <?php require_once "php/getting_names_with_db.php" ?>
 <? require 'includes/connecting_db.php' ?>
-<? include 'pages/description.php' ?>
+<? include ($_SERVER['DOCUMENT_ROOT'].'/pages/description.php'); ?>
 
 <head>
 	<meta charset="UTF-8">
@@ -17,7 +17,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+	<script src="./node_modules/gquery/gquery.js" ></script>
 	<script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
 	<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"> -->
@@ -110,16 +111,18 @@
 			</main>
 		</section>
 		<section class="fourth_section">
+		<div id="description" class="description open">
+    	</div>
 			<hr>
-			<h1 class="section_title">Мои работы</h1>
+			<h1 class="section_title" >Мои работы</h1>
 			<div class="blog">
 				<div class="blog_content_grid">
 					<? $projects_data = mysqli_query($connection, "SELECT * FROM `projects` ORDER BY `id` DESC LIMIT 10 "); 
 					?>
 					<?
-					while ($proj = mysqli_fetch_assoc($projects_data)) {
+					while ($proj = mysqli_fetch_array($projects_data)) {
 					?>
-						<figure>
+						<figure class="block_desc" id="block_desc" item_id="<? echo (int) $proj['id']; ?>">
 							<a href="#project_figure" class="project-figure">
 								<img src="img/<?php echo $proj['image']; ?>" alt="">
 								<figcaption>
@@ -162,5 +165,6 @@
 <script src="js/height&widthElements.js"></script>
 <script src="./js/item_animations.js"></script>
 <script src="js/popup.js"></script>
+<script src="js/project_description.js"></script>
 
 </html>

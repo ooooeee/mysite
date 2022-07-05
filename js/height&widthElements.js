@@ -18,7 +18,6 @@ document.onscroll = function() {
 
 
 var screen_height  = window.innerHeight;
-console.log('screen_height')
 $('#first_screen').css({height: String(screen_height) + 'px'})
 $('#second_screen').css({height:String(screen_height) + 'px'})
 //#endregion
