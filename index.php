@@ -21,6 +21,7 @@
 	<script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
 	<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"> -->
+	
 	<script src="./jquery.easing.js"></script>
 </head>
 
