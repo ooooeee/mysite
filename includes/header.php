@@ -7,8 +7,6 @@
 	while ($link = mysqli_fetch_assoc($nav_links_q)) {
 		$nav_links[] = $link;
 	}
-
-
 	?>
 	<nav>
 		<ul>

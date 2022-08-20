@@ -16,7 +16,5 @@
     "url": "https://github.com/ooooeee/mysite/issues"
   },
   "homepage": "https://github.com/ooooeee/mysite#readme",
-  "dependencies": {
-    "gquery": "^0.1.0"
-  }
+  "devDependencies": {}
 }

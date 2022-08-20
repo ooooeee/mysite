@@ -34,6 +34,10 @@
     -webkit-box-sizing: border-box;
 }
 
+#main {
+    height: 1080px;
+}
+
 /*variables====================*/
 /*=============================*/
 hr {
@@ -126,7 +130,7 @@ body.lock {
     content: "";
     height: 3px;
     width: 0%;
-    background-image: linear-gradient(45deg, #080de9, #e401ff);
+    background-image: linear-gradient(45deg, #575897, #ae5bb8);
     transition: width 0.4s ease-in-out;
 }
 
@@ -257,6 +261,9 @@ body.lock {
     font-size: 20px;
     font-family: "Bebas Neue", cursive;
 }
+.fourth_section .blog_content_grid figure img {
+    background-blend-mode: normal;
+}
 .fourth_section .blog_content_grid figure figcaption {
     position: absolute;
     top: 0;
@@ -272,9 +279,11 @@ body.lock {
     opacity: 0;
     transition-duration: 400ms;
     transform: translate3d(0, -20px, 0);
+    color: black;
 }
 .fourth_section .blog_content_grid figure p {
     opacity: 0;
+    color: black;
     transition-duration: 400ms;
     transform: translate3d(0, 80px, 0);
 }
@@ -299,7 +308,9 @@ body.lock {
     transform: scale(1);
 }
 .fourth_section .blog_content_grid figure:hover img {
+    background-blend-mode: normal;
     opacity: 0.5;
+    filter: blur(2px);
 }
 .fourth_section .blog_content_grid figure figcaption::after {
     border-right: 1px solid #000;
@@ -358,7 +369,7 @@ body.lock {
     opacity: 1;
     margin-left: 0px;
     margin-top: 0px;
-    transition: opacity 1s ease-in-out, margin 1s ease-in-out, height 1s ease-in-out;
+    transition: opacity 1s ease-in, margin 1s cubic-bezier(0.4, 0, 0.4, 0.5), height 1s ease-out;
 }
 
 /*======*/
@@ -490,53 +501,6 @@ body.lock {
     width: 100%;
     height: 100%;
     top: 0;
-}
-
-.grow_skew_forward {
-    user-select: none;
-    font-size: 1em;
-    background: #f76e31;
-    color: #fff;
-    border: 3px solid #f76e31;
-    border-radius: 20px;
-    margin: 0.5rem;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-.grow_skew_forward:hover {
-    color: #050607;
-}
-.grow_skew_forward::after {
-    content: "";
-    background: #ecf0f1;
-    position: absolute;
-    z-index: -1;
-    padding: 0.85em 0.75em;
-    display: block;
-}
-.grow_skew_forward:focus {
-    background: #ecf0f1;
-}
-
-button[class^=grow]::after {
-    transition: all 0.5s ease;
-}
-
-button[class^=grow]:hover::after {
-    transition: all 0.5s ease-out;
-}
-
-.grow_skew_forward::after {
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-}
-
-.grow_skew_forward:hover::after {
-    transform: skewX(-45deg) scale(1, 1);
 }
 
 .description {

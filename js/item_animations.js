@@ -8,11 +8,11 @@ const _ITEMS_BLOCK_HEIGHT = $(_ITEMS_MAIN_BLOCK).offset()['top'] + _STEP;
 
 var _is_avaibled = true;
 
-$(window).scroll(function(){
-    if ($(window).scrollTop() >= _ITEMS_BLOCK_HEIGHT - 100) {
-        anim_show_items(1);
-    }
-})
+// $(window).scroll(function(){
+//     if ($(window).scrollTop() >= _ITEMS_BLOCK_HEIGHT - 100) {
+//         anim_show_items(1);
+//     }
+// })
 
 
 $(window).scroll(function(){

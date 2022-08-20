@@ -14,11 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="./_sourse/demo.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-	<script src="./node_modules/gquery/gquery.js" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
 	<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"> -->
@@ -45,7 +42,7 @@
 			?>
 			<div class="services">
 				<h1 class="section_title">ЧЕМ Я ЗАНИМАЮСЬ</h1>
-				<main id="services_blocks" class="services_blocks">
+				<id="services_blocks" class="services_blocks">
 					<div class="inner-info-div" number="0">
 						<img src="img/computer-screen.png" alt="screen">
 						<h2>Frontend</h2>
@@ -112,8 +109,8 @@
 			</main>
 		</section>
 		<section class="fourth_section">
-		<div id="description" class="description open">
-    	</div>
+		<!-- <div id="description" class="description open"> -->
+    	<!-- </div> -->
 			<hr>
 			<h1 class="section_title" >Мои работы</h1>
 			<div class="blog">
@@ -140,6 +137,10 @@
 				</div>
 			</div>
 		</section>
+		<div class="flex-col-c-m" style="background-image: url(https://avatars.mds.yandex.net/get-zen_doc/1219682/pub_5eaa7423102eee24419d5607_5eaa74d77e79087ec3668df9/scale_1200);">
+			<img src="" alt="">
+			<p>sdasdasd</p>
+		</div>
 		<section style="background: #2ecc71; color: rgba(0, 0, 0, 0.5);">
 			<h2>Underline Fill</h2>
 			<nav class="fill">
@@ -166,6 +167,6 @@
 <script src="js/height&widthElements.js"></script>
 <script src="./js/item_animations.js"></script>
 <script src="js/popup.js"></script>
-<script src="js/project_description.js"></script>
+<!-- <script src="js/project_description.js"></script> -->
 
 </html>

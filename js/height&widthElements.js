@@ -18,8 +18,9 @@ document.onscroll = function() {
 
 
 var screen_height  = window.innerHeight;
+// $('section').css({height: String(screen_height) + 'px'})
 $('#first_screen').css({height: String(screen_height) + 'px'})
-$('#second_screen').css({height:String(screen_height) + 'px'})
+$('#second_screen').css({height: String(screen_height) + 'px'})
 //#endregion
 
 let services = document.getElementById('services_blocks');
