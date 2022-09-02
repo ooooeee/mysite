@@ -65,7 +65,7 @@
 						<img src="img/cogwheels.png" alt="">
 						<h2>Full stack</h2>
 						<p>
-							Создание полноценных сайтов, от лендинга до масштабного интеренет ресурса,
+							Создание полноценных сайтов, от лендинга до полноценного интеренет ресурса,
 							включающих в себя пользовательский интерфейс,
 							сложную логику и высокопроизводительные серверные скрипты
 						</p>
@@ -87,22 +87,22 @@
 			<h1 class="section_title">ОСНОВНЫЕ СВОЙСТВА МОИХ САЙТОВ</h1>
 			<main id="items_main_block_2">
 				<div id="item_2_1" class="item_2">
-					<img src="img/speedometer_two.svg" alt="speed">
+					<object id="speedometer" type="image/svg+xml" data="/img/speedometer.svg" ></object>
 					<h2><? print_r($db_properties['first_property']) ?></h2>
 					<p>Максимальная производительность и взаимодействие без задержек - мой главный приоритет</p>
 				</div>
 				<div id="item_2_2" class="item_2">
-					<img src="img/resolutions.png" alt="">
+					<object id="resolutions" type="image/svg+xml" data="/img/resolutions.svg" ></object>
 					<h2><? print_r($db_properties['second_property']) ?></h2>
 					<p>Мои макеты будут работать на любом устройстве, большом или маленьком</p>
 				</div>
 				<div id="item_2_3" class="item_2">
-					<img src="img/brain.png" alt="">
+					<object  id="idea" type="image/svg+xml" data="/img/brain.svg" ></object>
 					<h2><? print_r($db_properties['third_property']) ?></h2>
 					<p>Стильный и простой в использовании, интуитивно понятный UX/UI.</p>
 				</div>
 				<div id="item_2_4" class="item_2">
-					<img src="img/rocket.png" alt="">
+				<object id="rocket" type="image/svg+xml" data="/img/rocket.svg" ></object>
 					<h2><? print_r($db_properties['the_fourth_property']) ?></h2>
 					<p>Веб-сайт не должен быть статичным, мне нравится оживлять страницы и вдыхать в сайт жизнь</p>
 				</div>
@@ -137,10 +137,12 @@
 				</div>
 			</div>
 		</section>
-		<div class="flex-col-c-m" style="background-image: url(https://avatars.mds.yandex.net/get-zen_doc/1219682/pub_5eaa7423102eee24419d5607_5eaa74d77e79087ec3668df9/scale_1200);">
-			<img src="" alt="">
-			<p>sdasdasd</p>
+
+		<div id="map" style="width: 600px; height: 400px"></div>
+		<div>
+			<p id="myapi"></p>
 		</div>
+
 		<section style="background: #2ecc71; color: rgba(0, 0, 0, 0.5);">
 			<h2>Underline Fill</h2>
 			<nav class="fill">
@@ -156,10 +158,11 @@
 
 		<? require_once "includes/popup.php" ?>
 	</div>
-	<div class="test"></div>
+	
 	<?
 	require_once "includes/footer.php"
 	?>
+	
 </body>
 <script src="_sourse/jquery-3.6.0.min.js"></script>
 <script src="js/script.js"></script>
@@ -167,6 +170,21 @@
 <script src="js/height&widthElements.js"></script>
 <script src="./js/item_animations.js"></script>
 <script src="js/popup.js"></script>
-<!-- <script src="js/project_description.js"></script> -->
+<script src="https://api-maps.yandex.ru/2.1/?apikey=16ee79df-3cb1-4974-91bd-a914901f2fd7&lang=ru_RU" type="text/javascript"></script>
+<script src="js/map.js"></script>
+<script src="js/YesOrNo.js"></script>
+ <!-- залупа ебаная -->
+ <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js "></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/Flip.min.js "></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js "></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/Observer.min.js "></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollToPlugin.min.js "></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/Draggable.min.js "></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/EaselPlugin.min.js "></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/MotionPathPlugin.min.js "></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/PixiPlugin.min.js "></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js "></script>
+<script src="js/gsap.js"></script>
+
 
 </html>

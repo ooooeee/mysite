@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "this is my first website",
   "main": "jquery.easing.js",
+  "type" : "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +17,9 @@
     "url": "https://github.com/ooooeee/mysite/issues"
   },
   "homepage": "https://github.com/ooooeee/mysite#readme",
-  "devDependencies": {}
+  "dependencies": {
+    "gsap": "^3.11.0",
+    "jquery": "^3.6.0",
+    "vivus": "^0.4.6"
+  }
 }

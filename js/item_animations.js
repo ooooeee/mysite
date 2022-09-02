@@ -5,14 +5,11 @@ const _ITEM_ATTR_NAME = 'showed';
 
 const _ITEMS_COUNT = 4;
 const _ITEMS_BLOCK_HEIGHT = $(_ITEMS_MAIN_BLOCK).offset()['top'] + _STEP;
+console.log(_ITEMS_BLOCK_HEIGHT);
+// const innerdiv = $('.inner-info-div')
+//  console.log( innerdiv.offset()['top'] + _STEP);
 
 var _is_avaibled = true;
-
-// $(window).scroll(function(){
-//     if ($(window).scrollTop() >= _ITEMS_BLOCK_HEIGHT - 100) {
-//         anim_show_items(1);
-//     }
-// })
 
 
 $(window).scroll(function(){
@@ -35,8 +32,3 @@ function anim_show_items(index) {
 }
 
 
-// $('.grow_skew_forward').mouseleave(
-//     function(){
-//         $('.grow_skew_forward').css({background: "#f76e31"})
-//     }
-// )

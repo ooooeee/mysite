@@ -6,6 +6,7 @@
 <head>
     <title>Админка</title>
     <link rel="stylesheet" href="/_sourse/admin.css">
+    <link rel="stylesheet" href="/_sourse/demo.css">
 </head>
 
 <body>
@@ -22,6 +23,9 @@
             </div>
         </div>
     </div>
+    <div id="circle"></div>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js "></script>
+    <script src="/js/gsap.js"></script>
 </body>
 
 </html>

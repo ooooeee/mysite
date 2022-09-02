@@ -186,6 +186,8 @@ body.lock {
 }
 
 .inner-info-div {
+    opacity: 0;
+    top: 100px;
     position: relative;
     z-index: 0;
     box-shadow: 0px 0px 1px 5px rgba(98, 101, 255, 1);
@@ -228,18 +230,24 @@ body.lock {
                 margin-bottom: 12px;
             }
             p {
-                font-family: $ubuntu;
-                font-size: 32px;
+                font:{
+                    family: $ubuntu;
+                    size: 32px;
+                }
                 padding: 0 20px 0 20px;
             }
         }
-        img {
-            width: 150px;
-            margin-top: 92px;
+        object {
+            margin-top: 5%;
             text-align: center;
             margin-bottom: 57px;
             display: inline-block;
-            // box-shadow: inset 14px 4px 25px 10px #7B4FC2;
+            width: 175px;
+                height: 175px;
+            g{
+                width: 175px;
+                height: 175px;
+            }
         }
     }
 }
@@ -590,4 +598,12 @@ body.lock {
             }
         }
     }
+}
+
+
+#circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #ae5bb8;
 }

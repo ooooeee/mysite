@@ -1,3 +1,0 @@
- CREATE TABLE-(добавление таблицы) `директория` .`название таблицы` (`имя` ТИП ДАННЫХ(длинна) NOT NULL-(значение по умолчанию) ENGINE = InnoBD;
-ALTER TABLE- (изменение таблицы\столбца) `имя базы данных` CHANGE `старое имя столбца\таблицы` `новое имя столбца\таблицы` VARCHAR(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
-INSERT INTO `properties` (`first_properties`, `second_property`, `third_properties`, `the fourth property`) VALUES ('Скорость', 'Отзывчивость', 'Интуитивность & удобство', 'Динамичность');
