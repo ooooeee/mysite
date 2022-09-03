@@ -9,7 +9,7 @@ const gsap_block = innerdivs.offset()['top'];
 // console.log(gsap_block);
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= gsap_block - 200) {
+    if ($(window).scrollTop() >= gsap_block - 500) {
         gsapAnim(innerdivs)
     }
 })
@@ -17,14 +17,15 @@ $(window).scroll(function () {
 function gsapAnim(array) {
     for (const item of array) {
         gsap.to(item, {
-            duration: 2,
+            duration: 1,
             delay: .3,
             repeat: 2,
-            ease: "elastic.out(1.5, 0.3)",
-            y: -50,
+            ease: "power2.in",
+            y: -100,
+            width: '100%',
             yoyo: true,
         });
-        gsap.to(item, { duration: 5.0, opacity: 1 })
+        gsap.to(item, { duration: 2, opacity: 1, })
     }
 }
 // for (const item of innerdiv) {
